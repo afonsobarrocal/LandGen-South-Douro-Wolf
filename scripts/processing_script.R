@@ -111,7 +111,7 @@ bias <- (1-exp_vars[[9]]/max(values(exp_vars[[9]]), na.rm = T))
 bias <- subst(bias,NA,-9999)
 
 # exporting bias file
-writeRaster(bias,paste0("./new/full/bias_file_unpaved.asc"),
+writeRaster(bias,paste0("./data/tif/new/full/bias_file_unpaved.asc"),
             NAflag=-9999, overwrite = T)
 
 # remove unnecessary objects
@@ -124,68 +124,10 @@ for(i in seq_along(names(exp_vars))){
   dummy <- subst(exp_vars[[i]],NA,-9999)
   
   # exporting values
-  writeRaster(exp_vars[[i]],paste0("./new/full/",names(exp_vars[[i]]),".asc"),
+  writeRaster(exp_vars[[i]],paste0("./data/tif/new/full/",names(exp_vars[[i]]),".asc"),
               NAflag=-9999, overwrite = T)
   
   # remove unnecessary object
   rm(i,dummy)
   invisible(gc())
 }
-
-
-## For sampled area
-
-# load package
-library("sf")
-
-# import "mold" shapefile
-mold <- read_sf("./shapefiles/bias_cut.shp")
-mold <- vect(st_union(st_make_valid(mold)))
-
-# crop by extent
-# ext(exp_vars) <- ext(mold) # This for some reason changes the resolution!
-
-# crop by masking
-exp_vars <- mask(exp_vars, mold)
-plot(exp_vars)
-
-# unnecessary objects
-rm(mold)
-invisible(gc())
-
-# create SAMPLED bias layer
-bias <- (1-exp_vars[[11]]/max(values(exp_vars[[11]]), na.rm = T))
-bias <- subst(bias,NA,-9999)
-
-# exporting bias file
-writeRaster(bias,paste0("./new/sampled/bias_file_unpaved.asc"),
-            NAflag=-9999, overwrite = T)
-
-# TESTEZINHO
-plot(exp_vars[[11]],
-     main = "Unpaved")
-plot(bias,
-     main = "Bias",
-     range = c(0,1))
-
-# remove unnecessary objects
-rm(bias)
-invisible(gc())
-
-# exporting SAMPLED variables
-for(i in seq_along(names(exp_vars))){
-  # processing NA's into -9999
-  dummy <- subst(exp_vars[[i]],NA,-9999)
-  
-  # exporting values
-  writeRaster(exp_vars[[i]],paste0("./new/sampled/",names(exp_vars[[i]]),".asc"),
-              NAflag=-9999, overwrite = T)
-  
-  # remove unnecessary object
-  rm(i,dummy)
-  invisible(gc())
-}
-
-# remove unnecessary objects
-rm(exp_vars)
-invisible(gc())
