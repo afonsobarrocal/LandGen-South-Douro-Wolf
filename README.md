@@ -1,7 +1,7 @@
 
 ## Code Repository - Staying Close to Home: Connectivity constraints in an isolated wolf subpopulation (`LandGen-South-Douro-Wolf`)
 
-This is the code repository for the article ["Staying Close to Home: Connectivity constraints in an isolated wolf subpopulation"](). Since the Iberian wolf (*Canis lupus signatus*) is an endangered species in Portugal (Pimenta et al., 2023), some of the information used to run the scripts was not made available, as it is considered sensitive.
+This is the code repository for the article ["Staying Close to Home: Connectivity constraints in an isolated wolf subpopulation"](). **UMA OU DUAS FRASES DE RESUMO DO PAPER.** Since the Iberian wolf (*Canis lupus signatus*) is an endangered species in Portugal (Pimenta et al., 2023), some of the information used to run the scripts was not made available, as it is considered sensitive.
 
 Repository structure:
 
