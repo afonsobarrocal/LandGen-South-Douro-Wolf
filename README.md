@@ -21,8 +21,8 @@ Pimenta, V., Barroso, I., Álvares, F., & Petrucci-Fonseca, F. (2023). *Canis lu
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;Fonseca, C., Rodrigues, L., Grilo, C., Lopes-Fernandes, M., Palmeirim, J. M., Santos-Reis, M., Alves, P. C., <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;Cabral, J. A., Ferreira, M., Mira, A., Eira, C., Negrões, N., Paupério, J., Pita, R., Rainho, A., Rosalino, L. M., Tapisso, <br> 
+&nbsp;Cabral, J. A., Ferreira, M., Mira, A., Eira, C., Negrões, N., Paupério, J., Pita, R., Rainho, A., Rosalino, L. M., <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;J. T., &, Vingada, J. (eds.): *Livro Vermelho dos Mamíferos de Portugal Continental* (pp. 210-211). FCiências.ID, <br> 
+&nbsp;Tapisso, J. T., &, Vingada, J. (eds.): *Livro Vermelho dos Mamíferos de Portugal Continental* (pp. 210-211). <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;ICNF, Lisboa.
+&nbsp;FCiências.ID, ICNF, Lisboa.
