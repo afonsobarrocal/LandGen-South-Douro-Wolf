@@ -1,7 +1,7 @@
 
 ## Code Repository - Staying Close to Home: Connectivity constraints in an isolated wolf subpopulation (`LandGen-South-Douro-Wolf`)
 
-<p style='text-align: justify;'>This is the code repository for the article ["Staying Close to Home: Connectivity constraints in an isolated wolf subpopulation"](). In this paper, we used landscape genetics to assess which factors – isolation by distance (IBD) and/or isolation by landscape resistance (IBR) – influence gene flow in the Iberian wolf (*Canis lupus signatus*) subpopulation south of the Douro River (Portugal). To this end, we use the inverse of suitability surfaces (modeled through MaxEnt) together with an individual-based analysis (Multiple Regressions on Distance Matrices; MRDMs) to test our hypotheses. Since the Iberian wolf is an endangered species in Portugal (Pimenta et al., 2023), some of the information used to run the scripts was not made available, as it is considered sensitive.
+This is the code repository for the article ["Staying Close to Home: Connectivity constraints in an isolated wolf subpopulation"](). In this paper, we used landscape genetics to assess which factors – isolation by distance (IBD) and/or isolation by landscape resistance (IBR) – influence gene flow in the Iberian wolf (*Canis lupus signatus*) subpopulation south of the Douro River (Portugal). To this end, we use the inverse of suitability surfaces (modeled through MaxEnt) together with an individual-based analysis (Multiple Regressions on Distance Matrices; MRDMs) to test our hypotheses. Since the Iberian wolf is an endangered species in Portugal (Pimenta et al., 2023), some of the information used to run the scripts was not made available, as it is considered sensitive.
 
 Repository structure:
 
@@ -14,8 +14,6 @@ Repository structure:
   + `data`:
     + Since the Iberian wolf (*Canis lupus signatus*) is an endangered species in Portugal, some of the input information used in the scripts is not available here.
     + `tif`: here, there is only one type of file: compressed folders (```.zip```). Inside these folders, you will find the raster layers used in the R scripts (in ```.tif``` format).
-
-</p>
 
 ### References 
 
