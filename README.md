@@ -19,10 +19,10 @@ Repository structure:
 
 Pimenta, V., Barroso, I., Álvares, F., & Petrucci-Fonseca, F. (2023). *Canis lupus* lobo. *In* Mathias, M. L. (coord.), <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;Fonseca, C., Rodrigues, L., Grilo, C., Lopes-Fernandes, M., Palmeirim, J. M., Santos-Reis, M., Alves, P. C., Cabral, J. A., <br> 
+&nbsp;Fonseca, C., Rodrigues, L., Grilo, C., Lopes-Fernandes, M., Palmeirim, J. M., Santos-Reis, M., Alves, P. C., <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;Ferreira, M., Mira, A., Eira, C., Negrões, N., Paupério, J., Pita, R., Rainho, A., Rosalino, L. M., Tapisso, J. T., & <br> 
+&nbsp;Cabral, J. A., Ferreira, M., Mira, A., Eira, C., Negrões, N., Paupério, J., Pita, R., Rainho, A., Rosalino, L. M., Tapisso, <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;Vingada, J. (eds.): *Livro Vermelho dos Mamíferos de Portugal Continental* (pp. 210-211). FCiências.ID, ICNF, <br> 
+&nbsp;J. T., &, Vingada, J. (eds.): *Livro Vermelho dos Mamíferos de Portugal Continental* (pp. 210-211). FCiências.ID, <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;Lisboa.
+&nbsp;ICNF, Lisboa.
