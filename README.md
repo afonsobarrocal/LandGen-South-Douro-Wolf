@@ -1,7 +1,7 @@
 
 ## Code Repository - Staying Close to Home: Connectivity constraints in an isolated wolf subpopulation (`LandGen-South-Douro-Wolf`)
 
-
+This is the code repository for the article "Staying Close to Home: Connectivity constraints in an isolated wolf subpopulation".
 
 Repository structure:
 
