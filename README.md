@@ -2,7 +2,7 @@
 ## Code Repository - Staying Close to Home: Connectivity constraints in an isolated wolf subpopulation (`LandGen-South-Douro-Wolf`)
 
  <div align="justify">This is the code repository for the article <a href="">"Staying Close to Home: Connectivity constraints in an isolated wolf subpopulation"</a>. In this paper, we used landscape genetics to assess which factors – isolation by distance (IBD) and/or isolation by landscape resistance (IBR) – influence gene flow in the Iberian wolf (<i>Canis lupus signatus</i>) subpopulation south of the Douro River (Portugal). To this end, we use the inverse of suitability surfaces (modeled through MaxEnt) together with an individual-based analysis (Multiple Regressions on Distance Matrices; MRDMs) to test our hypotheses. Since the Iberian wolf is an endangered species in Portugal (Pimenta et al., 2023), some of the information used to run the scripts was not made available, as it is considered sensitive.
-<br>
+\\
 Repository structure:
 
 + `output`:
