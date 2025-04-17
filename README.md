@@ -17,7 +17,7 @@ Repository structure:
 
 ### References 
 
-Pimenta, V., Barroso, I., Álvares, F. & Petrucci-Fonseca, F. (2023). *Canis lupus* lobo. *In* Mathias, M. L. (coord.), Fonseca, <br> 
+Pimenta, V., Barroso, I., Álvares, F., & Petrucci-Fonseca, F. (2023). *Canis lupus* lobo. *In* Mathias, M. L. (coord.), Fonseca, <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;C., Rodrigues, L., Grilo, C., Lopes-Fernandes, M., Palmeirim, J. M., Santos-Reis, M., Alves, P. C., Cabral, J. A., <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
