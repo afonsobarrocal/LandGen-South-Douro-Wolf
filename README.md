@@ -12,4 +12,5 @@ Repository structure:
 + `scripts`:
   + here are the scripts used for (part of) the processing of the variables used in MaxEnt and for performing the MRDMs
   + `data`:
-    + `tif`: ALGO
+    + Since the Iberian wolf (*Canis lupus signatus*) is an endangered species in Portugal, some of the input information used in the scripts is not available here
+    + `tif`: here are the raster layers used in the scripts
