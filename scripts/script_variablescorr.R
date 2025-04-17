@@ -4,10 +4,13 @@
 #### Date: March 28th, 2025                   ####
 ##################################################
 
-## Correlation between variables
+###################################
+## Correlation between variables ##
+###################################
+
 # load packages
-library(terra)
-library(readr)
+library("terra")
+library("readr")
 
 # import rasters
 paths <- list.files(path = "./new/full/asci", pattern = "asc", full.names = T)
