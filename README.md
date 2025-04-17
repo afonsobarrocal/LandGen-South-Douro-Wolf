@@ -7,7 +7,7 @@ Repository structure:
 
 + `output`:
   + `maxent`:
-    + `results`: here are the output PDF files from MaxEnt
+    + `results`: here are the output PDF files from MaxEnt and also an Excel file with the variables of the selected MaxEnt models sorted by their contribution to the models' gain
     + `suitability_surfaces`: here are the (average) suitability surfaces of each MaxEnt model tested
 + `scripts`:
   + here are the scripts used for (part of) the processing of the variables used in MaxEnt and for performing the MRDMs
