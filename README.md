@@ -23,4 +23,6 @@ Pimenta, V., Barroso, I., Álvares, F. & Petrucci-Fonseca, F. (2023). *Canis lup
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;Ferreira, M., Mira, A., Eira, C., Negrões, N., Paupério, J., Pita, R., Rainho, A., Rosalino, L. M., Tapisso, J. T., & <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;Vingada, J. (eds.): *Livro Vermelho dos Mamíferos de Portugal Continental* (pp. 210-211). FCiências.ID, ICNF, Lisboa.
+&nbsp;Vingada, J. (eds.): *Livro Vermelho dos Mamíferos de Portugal Continental* (pp. 210-211). FCiências.ID, ICNF, <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;Lisboa.
