@@ -4,14 +4,16 @@
 #### Date: March 28th, 2025                   ####
 ##################################################
 
-## GENETIC DISTANCE ANALYSIS
-#
+###############################
+## GENETIC DISTANCE ANALYSIS ##
+###############################
+
 # Load necessary packages
-library(adegenet)
-library(poppr)
+library("adegenet")
+library("poppr")
 
 # Read microsatellite data from .txt file
-data <- read.table("genetic_data.txt", header = T, stringsAsFactors = FALSE,sep = "/")
+data <- read.table("./genetic_data.txt", header = T, stringsAsFactors = FALSE,sep = "/")
 
 # Convert to df and remove the first column (individuals ID)
 genetic_data <- as.data.frame(data[,-1])
@@ -26,17 +28,17 @@ codom_dist <- diss.dist(genind_obj, percent = FALSE)
 # Convert to matrix for easier viewing
 codom_dist_matrix <- as.matrix(codom_dist)
 
-#
 ## Ecological distances calculation (Euclidean and Least-cost paths)
 
 # Load required libraries
-library(sf)
-library(raster)
-#library(leastcostpath) #not working
-library(gdistance)
+library("sf")
+library("raster")
+
+# library("leastcostpath") # not working
+library("gdistance")
 
 # Import "genotypes" (shapefile w/ 3 columns: Individual ID, X, Y)
-ind <- st_read("genotypes.shp")
+ind <- st_read("./genotypes.shp")
 
 # Extract individual ID code
 ind_ID <- ind$Ind
@@ -51,16 +53,16 @@ coords <- as.data.frame(coords)
 # extract number of individuals
 num_individuals <- nrow(coords)
 
-#
-## FULL model linear
-#
+#######################
+## FULL model linear ##
+#######################
+
 ## Load HSM raster
 hsm <- raster("./Maxent/results/Full/unhinged/Canis_lupus_avg.asc")  
 
 # create trans object for HSM
 trans_layer <- transition(hsm, transitionFunction = mean, directions = 8)
-trans_layer <- geoCorrection(trans_layer, type = "c") 
-# type c to correct for distance distortion
+trans_layer <- geoCorrection(trans_layer, type = "c") # type c to correct for distance distortion
 
 # Distance matrix calculation
 distance_matrix <- matrix(NA, nrow = num_individuals, ncol = num_individuals)
@@ -85,8 +87,9 @@ for (i in 1:(num_individuals - 1)) {
 row.names(distance_matrix)<- ind_ID
 colnames(distance_matrix)<- ind_ID
 
-#
-## FULL model exponential
+############################
+## FULL model exponential ##
+############################
 
 # Run exponential transformation
 # Define cell size
@@ -115,8 +118,7 @@ hsm_exp <- 1 - resist_exp_standard
 
 # Create trans object
 trans_layer_exp <- transition(hsm_exp, transitionFunction = mean, directions = 8)
-trans_layer_exp <- geoCorrection(trans_layer_exp, type = "c")
-# type c to correct for distance distortion
+trans_layer_exp <- geoCorrection(trans_layer_exp, type = "c") # type c to correct for distance distortion
 
 # Distance matrix calculation
 distance_matrix_exp <- matrix(NA, nrow = num_individuals, ncol = num_individuals)
@@ -141,9 +143,10 @@ for (i in 1:(num_individuals - 1)) {
 row.names(distance_matrix_exp)<- ind_ID
 colnames(distance_matrix_exp)<- ind_ID
 
-#
-## Euclidean distance model
-#
+####################################
+##### Euclidean distance model #####
+####################################
+
 # Calculate Euclidean distance using dist()
 dist_Euclidean <- as.matrix(dist(coords[, c("X", "Y")]))
 
@@ -151,8 +154,9 @@ dist_Euclidean <- as.matrix(dist(coords[, c("X", "Y")]))
 row.names(dist_Euclidean)<- ind_ID
 colnames(dist_Euclidean)<- ind_ID
 
-#
-## Resource availability model (resou)
+########################################
+## Resource availability model (resou)##
+########################################
 
 # Load Resou raster
 hsm_resou <- raster("./Maxent/results/Resou/unhinged/Canis_lupus_avg.asc")
@@ -160,8 +164,7 @@ crs(hsm_landsc) <- "EPSG:3857"
 
 # create trans object for resources hsm
 resou_trans_layer <- transition(hsm_resou, transitionFunction = mean, directions = 8)
-resou_trans_layer <- geoCorrection(resou_trans_layer, type = "c") 
-# type c to correct for distance distortion
+resou_trans_layer <- geoCorrection(resou_trans_layer, type = "c") # type c to correct for distance distortion
 
 # Create matrix for least-cost path calculations
 lcp_resou <- matrix(NA, nrow = num_individuals, ncol = num_individuals)
@@ -186,8 +189,9 @@ for (i in 1:(num_individuals - 1)) {
 row.names(lcp_resou)<- ind_ID
 colnames(lcp_resou)<- ind_ID
 
-#
-## Risks and disturbances model (Disturb)
+###########################################
+## Risks and disturbances model (Disturb)##
+###########################################
 
 # Load Disturb raster
 hsm_disturb <- raster("./Maxent/results/Disturb/hinged/Canis_lupus_avg.asc")
@@ -195,8 +199,7 @@ crs(hsm_disturb) <- "EPSG:3857"
 
 # create trans object for hsm
 disturb_trans_layer <- transition(hsm_disturb, transitionFunction = mean, directions = 8)
-disturb_trans_layer <- geoCorrection(disturb_trans_layer, type = "c") 
-# type c to correct for distance distortion
+disturb_trans_layer <- geoCorrection(disturb_trans_layer, type = "c") # type c to correct for distance distortion
 
 # Create matrix for least-cost path calculations
 lcp_disturb <- matrix(NA, nrow = num_individuals, ncol = num_individuals)
@@ -221,8 +224,9 @@ for (i in 1:(num_individuals - 1)) {
 row.names(lcp_disturb)<- ind_ID
 colnames(lcp_disturb)<- ind_ID
 
-#
-# Individuals' order does not match
+#######################################
+## Individuals' order does not match ##
+#######################################
 
 ### Align individuals to match across all matrices
 genetic_ind <- rownames(codom_dist_matrix)
@@ -271,14 +275,11 @@ sdr <- function(x){
   return(obj)
 }
 
+# standardize by range
 dist_Euclid_std <- sdr(dist_Euclidean)
-
 lcp_std <- sdr(distance_matrix)
-
 lcp_exp_std <- sdr(distance_matrix_exp)
-
 lcp_resou_std <- sdr(lcp_resou)
-
 lcp_disturb_std <- sdr(lcp_disturb)
 
 # Save matrices to a CSV file
