@@ -85,10 +85,8 @@ ext(livest) <- ext(exp_vars)
 exp_vars <- c(exp_vars,roe,hpd,fire,urban,natwater,unpaved,paved,
               dist_agric,dist_bare,dist_shrub,dist_pasture,
               dist_bleaf,dist_conifer,dist_eucalypt,livest,attitudes)
-
 crs(exp_vars) <- "ESPG:3857"
 exp_vars <- subst(exp_vars,NaN,NA)
-
 names(exp_vars)
 
 # changing names
