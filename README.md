@@ -6,6 +6,6 @@
 Repository structure:
 
 + Output:
-  *
-    *
-      *
+  -
+    +
+      -
