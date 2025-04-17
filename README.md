@@ -13,7 +13,10 @@ Repository structure:
   + here, there is only one type of file: R scripts (```.R```). The scripts were used for (part of) the processing of the variables used in MaxEnt and for performing the MRDMs.
   + `data`:
     + Since the Iberian wolf (<i>Canis lupus signatus</i>) is an endangered species in Portugal, some of the input information used in the scripts is not available here.
-    + `tif`: here, there is only one type of file: compressed folders (```.zip```). Inside these folders, you will find the raster layers used in the R scripts (in ```.tif``` format).
+    + `tif`:
+      + here, there is only one type of file: compressed folders (```.zip```). Inside these folders, you will find the raster layers used in the R scripts (in ```.tif``` format).
+      + `new`:
+        + `full`: this is just the directory where, if the code is run, the files will be saved.
 
 ### References 
 
