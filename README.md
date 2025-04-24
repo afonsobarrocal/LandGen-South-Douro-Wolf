@@ -29,5 +29,6 @@ Pimenta, V., Barroso, I., Álvares, F., & Petrucci-Fonseca, F. (2023). <i>Canis 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;Tapisso, J. T., & Vingada, J. (eds.): <i>Livro Vermelho dos Mamíferos de Portugal Continental</i> (pp. 210-211). <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;FCiências.ID, ICNF, Lisboa.
+&nbsp;FCiências.ID, ICNF, Lisboa. <a href="http://hdl.handle.net/10174/35224">"http://hdl.handle.net/10174/35224"</a>.
+
 </div>
