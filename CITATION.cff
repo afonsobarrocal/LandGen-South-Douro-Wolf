@@ -1,0 +1,53 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Code Repository - Staying Close to Home: Connectivity
+  constraints in an isolated wolf subpopulation
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - affiliation: >-
+      Center for Ecology, Evolution and Environmental
+      Changes (CE3C) and CHANGE – Global Change and
+      Sustainability Institute. Faculdade de Ciências,
+      Universidade de Lisboa, Campo Grande 1749-016 Lisboa,
+      Portugal
+    given-names: Afonso
+    family-names: Barrocal
+    orcid: 'https://orcid.org/0009-0001-3331-9996'
+  - given-names: Hugo
+    family-names: Rebelo
+    affiliation: >-
+      Center for Ecology, Evolution and Environmental
+      Changes (CE3C) and CHANGE – Global Change and
+      Sustainability Institute. Faculdade de Ciências,
+      Universidade de Lisboa, Campo Grande 1749-016 Lisboa,
+      Portugal
+    orcid: 'https://orcid.org/0000-0002-7118-4068'
+  - given-names: Sofia
+    family-names: Lino
+    affiliation: >-
+      Center for Ecology, Evolution and Environmental
+      Changes (CE3C) and CHANGE – Global Change and
+      Sustainability Institute. Faculdade de Ciências,
+      Universidade de Lisboa, Campo Grande 1749-016 Lisboa,
+      Portugal
+    orcid: 'https://orcid.org/0000-0002-6428-4845'
+repository-code: 'https://github.com/afonsobarrocal/LandGen-South-Douro-Wolf'
+url: 'https://github.com/afonsobarrocal/LandGen-South-Douro-Wolf'
+abstract: >-
+  This is the code repository for the article "Staying Close
+  to Home: Connectivity constraints in an isolated wolf
+  subpopulation". In this paper, we used landscape genetics
+  to assess which factors – isolation by distance (IBD)
+  and/or isolation by landscape resistance (IBR) – influence
+  gene flow in the Iberian wolf (Canis lupus signatus)
+  subpopulation south of the Douro River (Portugal). To this
+  end, we use the inverse of suitability surfaces (modeled
+  through MaxEnt) together with an individual-based analysis
+  (Multiple Regressions on Distance Matrices; MRDMs) to test
+  our hypotheses.
