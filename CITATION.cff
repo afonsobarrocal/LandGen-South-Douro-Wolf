@@ -30,4 +30,4 @@ repository-code: 'https://github.com/afonsobarrocal/LandGen-South-Douro-Wolf'
 url: 'https://github.com/afonsobarrocal/LandGen-South-Douro-Wolf'
 abstract: >-
   This is the code repository for the article "Staying with the Pack: Connectivity constraints in an isolated wolf subpopulation". In this paper, we used landscape genetics to assess which factors – isolation by distance (IBD) and/or isolation by landscape resistance (IBR) – influence gene flow in the Iberian wolf (<i>Canis lupus signatus</i>) subpopulation south of the Douro River (Portugal). To this end, we use the inverse of suitability surfaces (modeled through MaxEnt) together with an individual-based analysis (Multiple Regressions on Distance Matrices; MRDMs) to test our hypotheses.
-version: LF-S-D-W.1.0
+version: LG-S-D-W.1.1
